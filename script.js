@@ -25,7 +25,7 @@ logo.addEventListener('mouseout', () => {
 
  
 // Fetch data from the API and populate buttons with film names
-fetch("http://localhost:3000/films")
+fetch("https://indiefilmsjson-1nbcwi81c-treneeses-projects.vercel.app/")
   .then((resp) => resp.json())
   .then((data) => {
 //     const buttonContainer = document.getElementById('buttonContainer');
@@ -99,7 +99,7 @@ fetch("http://localhost:3000/films")
 
 // Function to fetch film data and populate details based on the ID
 function fetchFilmDataAndPopulate(id) {
-  fetch(`http://localhost:3000/films/${id}`)
+  fetch(`https://indiefilmsjson-1nbcwi81c-treneeses-projects.vercel.app/${id}`)
     .then((resp) => resp.json())
     .then((video) => {
       // Populate the overlay with video details
